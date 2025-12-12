@@ -102,6 +102,8 @@ sudo systemctl stop ${SERVICE_NAME}.service 2>/dev/null
 sudo systemctl disable ${SERVICE_NAME}.service 2>/dev/null
 
 # 启用并启动定时器 (Timer)
+sudo systemctl enable ${SERVICE_NAME}.service
+sudo systemctl start ${SERVICE_NAME}.service
 sudo systemctl enable ${TIMER_NAME}
 sudo systemctl start ${TIMER_NAME}
 
